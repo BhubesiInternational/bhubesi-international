@@ -30,7 +30,11 @@ Everything here follows the principles in [`CLAUDE.md`](./CLAUDE.md): build syst
 
 ## Status
 
-This repository defines the company's organizational and documentation architecture (Phases 1–2) and now includes its first application code (Phase 3): [`projects/bhubesi-os/`](./projects/bhubesi-os), the company's own operating platform, starting with a working AI Chat Interface prototype. Further application code for other projects will be added incrementally under `projects/` as each is approved and scoped, per [`workflows/project-kickoff.md`](./workflows/project-kickoff.md).
+- **Phases 1–2:** the company's organizational and documentation architecture, including the [Executive Brain](./executive-brain/README.md) doctrine layer and the [AI Workforce](./ai-agents/workforce/README.md) org chart.
+- **Phase 3:** first application code — [`projects/bhubesi-os/`](./projects/bhubesi-os), the company's own operating platform, starting with a working AI Chat Interface prototype.
+- **Phase 4:** the company's current ventures (RecoverHUB, 360Sports, The Chairman, Bhubesi Ventures/New Business Development, Future Ventures) modeled through a consistent six-lens structure — Strategy, SOPs, Marketing, Operations, Financial Model, AI Agents — with the parent holding company itself modeled the same way in [`executive-brain/bhubesi-international-profile.md`](./executive-brain/bhubesi-international-profile.md).
+
+Further application code and venture detail will be added incrementally as each is approved, scoped, and confirmed, per [`workflows/project-kickoff.md`](./workflows/project-kickoff.md).
 
 ## License
 

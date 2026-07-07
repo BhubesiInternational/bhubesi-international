@@ -16,6 +16,11 @@ If `CLAUDE.md` is the constitution for how the AI operating system behaves, the 
 | [`risk-register.md`](./risk-register.md) | What could hurt us, how badly, and who owns watching it? |
 | [`kpi-framework.md`](./kpi-framework.md) | How do we know if we're actually winning? |
 | [`executive-dashboard-spec.md`](./executive-dashboard-spec.md) | What should leadership see, at a glance, to run the company? |
+| [`bhubesi-international-profile.md`](./bhubesi-international-profile.md) | How does the parent holding company itself map onto the six-lens venture model (Strategy, SOPs, Marketing, Operations, Financial Model, AI Agents) used for every venture in `projects/`? |
+| [`sops.md`](./sops.md) | Holding-company-level operating procedures (new venture approval, shared-services delivery, cross-subsidiary escalation) |
+| [`marketing.md`](./marketing.md) | How the Bhubesi International parent brand itself is positioned, distinct from any venture's own marketing |
+| [`operations.md`](./operations.md) | How the holding company operates across every subsidiary and venture |
+| [`financial-model.md`](./financial-model.md) | How revenue and cost consolidate across the group |
 
 ## How the Executive Brain Relates to the Rest of the Repository
 
@@ -39,6 +44,7 @@ Concretely:
 - [`executive-office/governance/`](../executive-office/governance) owns [`risk-register.md`](./risk-register.md) as its live risk tracking instrument.
 - [`workflows/project-kickoff.md`](../workflows/project-kickoff.md) and [`workflows/decision-making.md`](../workflows/decision-making.md) are the day-to-day procedures that implement [`quarterly-planning-framework.md`](./quarterly-planning-framework.md) and [`decision-framework.md`](./decision-framework.md) respectively.
 - [`kpi-framework.md`](./kpi-framework.md) defines what the [`executive-dashboard-spec.md`](./executive-dashboard-spec.md) must display.
+- Every venture under [`projects/`](../projects) (RecoverHUB, 360Sports, The Chairman, Future Ventures) and [`business-units/bhubesi-ventures/`](../business-units/bhubesi-ventures) is modeled through the same six-lens structure as [`bhubesi-international-profile.md`](./bhubesi-international-profile.md) uses for the parent company: `strategy.md`, `sops.md`, `marketing.md`, `operations.md`, `financial-model.md`, `ai-agents.md`.
 
 ## Precedence
 

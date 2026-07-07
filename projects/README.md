@@ -23,3 +23,5 @@ Projects are time-bound or product-specific initiatives. Each draws on one or mo
 ## Standards
 
 Every project directory contains at minimum a `README.md` covering: mandate, current status, lead business unit, and key milestones. Significant decisions within a project are logged using [`../templates/decision-log-template.md`](../templates/decision-log-template.md).
+
+Ventures with real business substance behind them (currently RecoverHUB, 360Sports, The Chairman, and Future Ventures) are additionally modeled through six lenses, each its own document: `strategy.md`, `sops.md`, `marketing.md`, `operations.md`, `financial-model.md`, `ai-agents.md`. See [`../executive-brain/bhubesi-international-profile.md`](../executive-brain/bhubesi-international-profile.md) for how this same structure applies to the parent company, and [`../business-units/bhubesi-ventures/`](../business-units/bhubesi-ventures) for how it applies to a business unit rather than a project.

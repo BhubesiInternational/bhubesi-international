@@ -2,22 +2,41 @@
 
 ## Status
 
-Early-stage / documentation pending. This README is a placeholder charter to be filled in as the project brief is formalized.
+**Content production and brand development.** A multi-sport media platform, not yet monetizing at scale.
 
 ## Mandate
 
-360Sports is a sports technology and media initiative, combining Bhubesi Labs' technical capability with Bhubesi Media's content production to serve athletes, fans, and sporting organizations.
+360Sports is a multi-sport media-first platform, initially covering football, rugby, cricket, basketball, athletics, and community/school sport. The roadmap extends from media into technology — statistics, athlete profiles, and digital platforms.
+
+## Audiences
+
+Sports fans, athletes, schools, clubs, federations, brands, and sponsors.
+
+## Business Model
+
+Sponsorship, advertising, brand partnerships, event coverage, and content licensing today; a subscription offering is on the future roadmap. See [`financial-model.md`](./financial-model.md).
 
 ## Lead Business Units
 
-[Bhubesi Labs](../../business-units/bhubesi-labs/README.md) (technology) and [Bhubesi Media](../../business-units/bhubesi-media/README.md) (content).
+[Bhubesi Media](../../business-units/bhubesi-media/README.md) (content production) and [Bhubesi Labs](../../business-units/bhubesi-labs/README.md) (future technology roadmap).
+
+## Venture Documents
+
+| Document | Covers |
+|---|---|
+| [`strategy.md`](./strategy.md) | Vision, sport focus, positioning, strategic horizon |
+| [`sops.md`](./sops.md) | Content production, event coverage, and partnership procedures |
+| [`marketing.md`](./marketing.md) | Positioning, audiences, channels |
+| [`operations.md`](./operations.md) | Org roles, operating rhythm, systems and tools |
+| [`financial-model.md`](./financial-model.md) | Revenue lines, cost structure, KPIs |
+| [`ai-agents.md`](./ai-agents.md) | Which AI Workforce seats and roles run this venture |
 
 ## Next Steps
 
-1. Complete a formal project brief using [`../../templates/project-brief-template.md`](../../templates/project-brief-template.md), covering the specific product/content offering, target audience, and scope.
-2. Route the brief through Strategy for approval per [`../../docs/governance.md`](../../docs/governance.md).
-3. Clarify division of ownership between Bhubesi Labs and Bhubesi Media before execution begins.
+1. Complete a formal project brief using [`../../templates/project-brief-template.md`](../../templates/project-brief-template.md).
+2. Route through Strategy for approval per [`../../docs/governance.md`](../../docs/governance.md).
+3. Clarify division of ownership between Bhubesi Labs and Bhubesi Media as the technology roadmap activates.
 
 ## Notes
 
-No application code or production assets exist for this project yet. Per current company direction, this repository documents structure only.
+No application code or production technology exists for this project yet — current activity is content production and brand development.

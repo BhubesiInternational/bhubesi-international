@@ -23,5 +23,9 @@ Shared terminology used across Bhubesi International's documentation and operati
 | **Milestone** | A defined checkpoint within a project or initiative used to track progress and trigger review. |
 | **Decision Log** | A record of a significant decision, its rationale, and its outcome, used for accountability and institutional memory. |
 | **Graduation** | The point at which a project matures into an ongoing responsibility of a business unit, or is formally closed out. |
+| **Six-Lens Venture Model** | The standard document set (`strategy.md`, `sops.md`, `marketing.md`, `operations.md`, `financial-model.md`, `ai-agents.md`) used to model every venture with real business substance — see `executive-brain/bhubesi-international-profile.md`. |
+| **New Business Development (NBD) Support** | The standing shared-services playbook Bhubesi Ventures runs to take a selected idea from the Future Ventures pipeline to an operating venture — see `business-units/bhubesi-ventures/operations.md`. Distinct from the pipeline itself (see Future Ventures). |
+| **Future Ventures** | The live pipeline of prospective new business ideas under evaluation, tracked in `projects/future-ventures/README.md`, distinct from the support services applied once an idea is selected (NBD Support, above). |
+| **Shared Services** | Centrally-provided functions (strategy, finance, legal, marketing, technology, AI implementation) that every subsidiary and venture draws on rather than duplicating — the core efficiency argument of the holding-company operating model in `executive-brain/bhubesi-international-profile.md`. |
 
 Add new terms here as the company's vocabulary develops. Keep definitions short and unambiguous.
