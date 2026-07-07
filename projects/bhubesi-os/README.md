@@ -52,13 +52,17 @@ Then open `http://localhost:3000`.
 
 ### Next Steps Toward a Real Backend
 
-1. Replace `app/src/lib/responder.ts`'s simulated logic with real LLM calls (per seat, using its documented mandate as a system prompt) — a Type 1 decision for the CTO seat given the vendor/cost commitment involved.
-2. Add persistence (managed Postgres/Supabase, per the original stack decision) for conversation history — currently in-memory only, lost on refresh.
-3. Add authentication and the access-level model described in [`executive-brain/executive-dashboard-spec.md`](../../executive-brain/executive-dashboard-spec.md) (adapted for chat rather than dashboard access).
-4. Scope the next module as its own addition to this brief, following [`workflows/project-kickoff.md`](../../workflows/project-kickoff.md).
+The full system architecture for this transition is now designed — see [`platform/`](../../platform/README.md), specifically [`platform/roadmap/mvp.md`](../../platform/roadmap/mvp.md) for the concrete MVP scope:
+
+1. Replace `app/src/lib/responder.ts`'s simulated logic with real LLM calls through the LLM Gateway per [`platform/ai/ai-platform.md`](../../platform/ai/ai-platform.md) and [`platform/ai/executive-ai.md`](../../platform/ai/executive-ai.md).
+2. Add persistence and multi-tenancy per [`platform/database/data-model.md`](../../platform/database/data-model.md) — currently in-memory only, lost on refresh.
+3. Add authentication and authorization per [`platform/api/authentication.md`](../../platform/api/authentication.md) and [`platform/api/authorization.md`](../../platform/api/authorization.md).
+4. Migrate this app into the monorepo structure in [`platform/architecture/solution-architecture.md`](../../platform/architecture/solution-architecture.md).
+5. Scope each subsequent module as its own addition to this brief, following [`workflows/project-kickoff.md`](../../workflows/project-kickoff.md) and [`platform/roadmap/`](../../platform/roadmap).
 
 ## Related Documents
 
+- [`platform/`](../../platform/README.md) — the complete recommended system architecture this prototype grows into, including the [CTO Report](../../platform/CTO-REPORT.md).
 - [`ai-agents/workforce/`](../../ai-agents/workforce/README.md) — the org chart this interface makes usable.
 - [`executive-brain/decision-framework.md`](../../executive-brain/decision-framework.md) — the Type 1/Type 2 logic the prototype simulates.
 - [`executive-brain/executive-dashboard-spec.md`](../../executive-brain/executive-dashboard-spec.md) — a sibling specification for a future Bhubesi OS module (Executive Dashboard), written before this one was built.
