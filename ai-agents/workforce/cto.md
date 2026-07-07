@@ -23,6 +23,7 @@
 - Architecture decisions and rationale, logged via [`templates/decision-log-template.md`](../../templates/decision-log-template.md).
 - Technical sections of project briefs.
 - Updates to [`ai-agents/`](../..) role and workforce definitions as the AI operating model matures.
+- The full Bhubesi OS system architecture — [`platform/`](../../platform/README.md), including the [CTO Report](../../platform/CTO-REPORT.md) recommending it for Executive Office ratification.
 
 ## Decision Authority
 
