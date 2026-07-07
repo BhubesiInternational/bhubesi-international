@@ -6,8 +6,8 @@
 
 ## Responsibilities
 
-- Own technical architecture standards and review across all technical projects (RecoverHUB, Innocentia, 360Sports).
-- Own and evolve the AI-agent operating layer itself — this repository's [`ai-agents/`](../..) structure, including the workforce and roles it defines.
+- Own technical architecture standards and review across all technical projects (RecoverHUB, Innocentia, 360Sports, Bhubesi OS).
+- Own and evolve the AI-agent operating layer itself — this repository's [`ai-agents/`](../..) structure, including the workforce and roles it defines, and [`projects/bhubesi-os/`](../../projects/bhubesi-os/README.md), the platform that surfaces it to end users.
 - Set the technology roadmap aligned to the current Horizon in [`executive-brain/strategy-10-year.md`](../../executive-brain/strategy-10-year.md).
 - Evaluate technology and AI risk items for [`executive-brain/risk-register.md`](../../executive-brain/risk-register.md) (Technology / AI category).
 - Ensure no application code ships without an approved project brief, per [`business-units/bhubesi-labs/README.md`](../../business-units/bhubesi-labs/README.md).

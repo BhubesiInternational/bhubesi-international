@@ -16,7 +16,7 @@ Everything here follows the principles in [`CLAUDE.md`](./CLAUDE.md): build syst
 | [`executive-brain/`](./executive-brain) | The company's doctrine layer — Constitution, vision/mission/values, 10-year strategy, decision framework, quarterly planning, risk register, KPI framework, and executive dashboard spec |
 | [`executive-office/`](./executive-office) | Strategy, governance, finance, legal, and human resources — the functions that steer the company |
 | [`business-units/`](./business-units) | Bhubesi Media, Bhubesi Creative, Bhubesi Labs, and Bhubesi Ventures — the operating divisions |
-| [`projects/`](./projects) | Active initiatives: RecoverHUB, 360Sports, The Chairman, Innocentia, and Future Ventures |
+| [`projects/`](./projects) | Active initiatives: RecoverHUB, 360Sports, The Chairman, Innocentia, Future Ventures, and Bhubesi OS (the company's own operating platform) |
 | [`ai-agents/`](./ai-agents) | The AI Workforce (12 named executive seats — CEO, COO, CFO, CTO, and more) plus lightweight task-mode roles, and how each is invoked |
 | [`workflows/`](./workflows) | The standard operating procedures and decision workflows used across the company |
 | [`templates/`](./templates) | Reusable templates for briefs, proposals, reports, and meeting documentation |
@@ -30,7 +30,7 @@ Everything here follows the principles in [`CLAUDE.md`](./CLAUDE.md): build syst
 
 ## Status
 
-This repository currently defines the company's organizational and documentation architecture. Application code, product repositories, and technical implementations for individual projects will be added incrementally under `projects/` and `business-units/bhubesi-labs/` as they are approved and scoped.
+This repository defines the company's organizational and documentation architecture (Phases 1–2) and now includes its first application code (Phase 3): [`projects/bhubesi-os/`](./projects/bhubesi-os), the company's own operating platform, starting with a working AI Chat Interface prototype. Further application code for other projects will be added incrementally under `projects/` as each is approved and scoped, per [`workflows/project-kickoff.md`](./workflows/project-kickoff.md).
 
 ## License
 

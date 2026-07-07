@@ -11,6 +11,7 @@ Projects are time-bound or product-specific initiatives. Each draws on one or mo
 | [`the-chairman/`](./the-chairman) | Bhubesi Media | Documentary/film project |
 | [`innocentia/`](./innocentia) | Bhubesi Labs | Product/technology initiative |
 | [`future-ventures/`](./future-ventures) | Bhubesi Ventures | Pipeline of prospective new initiatives |
+| [`bhubesi-os/`](./bhubesi-os) | Bhubesi Labs | The company's own operating platform — CRM, project management, finance, and more; AI Chat Interface module is a working prototype |
 
 ## Project Lifecycle
 

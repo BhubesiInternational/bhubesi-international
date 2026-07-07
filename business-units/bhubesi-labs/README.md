@@ -16,10 +16,11 @@ Software engineering, AI, and technical research and development for Bhubesi Int
 - **RecoverHUB** — see [`../../projects/recoverhub/README.md`](../../projects/recoverhub/README.md).
 - **360Sports** — see [`../../projects/360sports/README.md`](../../projects/360sports/README.md).
 - **Innocentia** — see [`../../projects/innocentia/README.md`](../../projects/innocentia/README.md).
+- **Bhubesi OS** — see [`../../projects/bhubesi-os/README.md`](../../projects/bhubesi-os/README.md), the company's own operating platform. Its AI Chat Interface module is the first application code in this repository.
 
 ## Note on Application Code
 
-Per current company direction, this repository defines organizational structure and documentation only — application code for individual products lives in project-specific repositories (or a `projects/<name>/` subdirectory) once technical implementation is scoped and approved. Do not add product source code directly under `business-units/bhubesi-labs/` without an approved project brief.
+Application code lives under `projects/<name>/` once a project brief is approved (see [`../../projects/bhubesi-os/README.md`](../../projects/bhubesi-os/README.md) for the working example). Do not add product source code directly under `business-units/bhubesi-labs/`, and do not start a new project's implementation without an approved brief per [`../../workflows/project-kickoff.md`](../../workflows/project-kickoff.md).
 
 ## How to Engage This Unit
 
