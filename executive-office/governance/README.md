@@ -26,6 +26,6 @@ Own decision rights, risk management, compliance, and policy across Bhubesi Inte
 
 This directory currently holds this README as the standing charter for the Governance function. Add policies, risk registers, and compliance records here as they are produced.
 
-## Related AI Role
+## Related AI Workforce Seats
 
-**Chief of Staff** and **CEO Advisor** (see [`../../ai-agents/`](../../ai-agents)).
+**[COO](../../ai-agents/workforce/coo.md)** (process/escalation enforcement) and **[Chief Legal Officer](../../ai-agents/workforce/chief-legal-officer.md)** (risk and compliance), drawing on the **Chief of Staff** and **CEO Advisor** roles (see [`../../ai-agents/`](../../ai-agents)).

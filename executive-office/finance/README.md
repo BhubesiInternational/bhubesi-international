@@ -27,6 +27,6 @@ Own budgeting, financial reporting, and investment appraisal across Bhubesi Inte
 
 This directory currently holds this README as the standing charter for the Finance function. Add budgets, financial reports, and appraisal models here as they are produced (e.g., `fy2026-budget.md`, `monthly-report-2026-07.md`).
 
-## Related AI Role
+## Related AI Workforce Seat
 
-**Financial Analyst** (see [`../../ai-agents/`](../../ai-agents)).
+**[CFO](../../ai-agents/workforce/cfo.md)**, drawing on the **Financial Analyst** role (see [`../../ai-agents/`](../../ai-agents)).

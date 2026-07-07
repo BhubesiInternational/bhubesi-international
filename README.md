@@ -17,7 +17,7 @@ Everything here follows the principles in [`CLAUDE.md`](./CLAUDE.md): build syst
 | [`executive-office/`](./executive-office) | Strategy, governance, finance, legal, and human resources — the functions that steer the company |
 | [`business-units/`](./business-units) | Bhubesi Media, Bhubesi Creative, Bhubesi Labs, and Bhubesi Ventures — the operating divisions |
 | [`projects/`](./projects) | Active initiatives: RecoverHUB, 360Sports, The Chairman, Innocentia, and Future Ventures |
-| [`ai-agents/`](./ai-agents) | Definitions of the executive AI roles that operate this system and how they're invoked |
+| [`ai-agents/`](./ai-agents) | The AI Workforce (12 named executive seats — CEO, COO, CFO, CTO, and more) plus lightweight task-mode roles, and how each is invoked |
 | [`workflows/`](./workflows) | The standard operating procedures and decision workflows used across the company |
 | [`templates/`](./templates) | Reusable templates for briefs, proposals, reports, and meeting documentation |
 | [`knowledge-base/`](./knowledge-base) | Company overview, brand standards, and reference material shared across all units |
@@ -25,7 +25,7 @@ Everything here follows the principles in [`CLAUDE.md`](./CLAUDE.md): build syst
 ## How to Use This Repository
 
 - **Executives and staff**: Start with [`docs/getting-started.md`](./docs/getting-started.md), then read [`executive-brain/README.md`](./executive-brain/README.md) for the company's guiding doctrine before diving into the business unit or project you're working in.
-- **AI agents / Claude sessions**: `CLAUDE.md` defines your operating mandate and executive roles. Use [`ai-agents/README.md`](./ai-agents/README.md) to select the correct role for a given task, and [`workflows/standard-workflow.md`](./workflows/standard-workflow.md) for how to execute it.
+- **AI agents / Claude sessions**: `CLAUDE.md` defines your operating mandate. Use [`ai-agents/README.md`](./ai-agents/README.md) to select the correct workforce seat or role for a given task, and [`workflows/standard-workflow.md`](./workflows/standard-workflow.md) for how to execute it.
 - **New initiatives**: Use the templates in [`templates/`](./templates) to launch a project brief, and add the initiative under [`projects/`](./projects) once approved.
 
 ## Status

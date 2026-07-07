@@ -20,6 +20,6 @@ Investment, incubation, and new business development for Bhubesi International.
 - New venture ideas should be logged under [`../../projects/future-ventures/`](../../projects/future-ventures) using [`../../templates/project-brief-template.md`](../../templates/project-brief-template.md).
 - Investment cases route through Executive Office — Finance and Strategy for approval per [`../../docs/governance.md`](../../docs/governance.md).
 
-## Related AI Roles
+## Related AI Workforce Seat
 
-**Business Strategist**, **Financial Analyst**, **Research Analyst** (see [`../../ai-agents/`](../../ai-agents)).
+**[Chief Research Officer](../../ai-agents/workforce/chief-research-officer.md)** (pipeline evaluation, primary support), in coordination with the **[CFO](../../ai-agents/workforce/cfo.md)** on investment appraisal, drawing on the **Business Strategist**, **Financial Analyst**, and **Research Analyst** roles (see [`../../ai-agents/`](../../ai-agents)).

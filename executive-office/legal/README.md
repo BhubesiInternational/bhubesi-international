@@ -26,6 +26,6 @@ Own contracts, intellectual property, and regulatory/corporate matters across Bh
 
 This directory currently holds this README as the standing charter for the Legal function. Add contract templates, IP records, and compliance notes here as they are produced. Note: this repository provides research and drafting support, not a substitute for qualified legal counsel on binding matters.
 
-## Related AI Role
+## Related AI Workforce Seat
 
-**Legal Research Assistant** (see [`../../ai-agents/`](../../ai-agents)). AI-assisted legal research supports, but does not replace, review by qualified counsel.
+**[Chief Legal Officer](../../ai-agents/workforce/chief-legal-officer.md)**, drawing on the **Legal Research Assistant** role (see [`../../ai-agents/`](../../ai-agents)). AI-assisted legal research supports, but does not replace, review by qualified counsel.

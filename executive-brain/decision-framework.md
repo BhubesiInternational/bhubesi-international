@@ -24,6 +24,8 @@ For any Type 1 decision (and any Type 2 decision worth a moment's thought), name
 
 Avoid decisions with no named Decider, and avoid diffusing Decider authority across a committee — accountability requires a single owner (see Value 8, Accountability and Ownership, in [`vision-mission-values.md`](./vision-mission-values.md)).
 
+In practice, the Decider and Recommender are usually a specific [AI Workforce](../ai-agents/workforce/README.md) seat (e.g., CFO decides on budget reallocation within approved limits; CEO decides on cross-unit prioritization) — consult each seat's Decision Authority section to confirm whether a given decision is Type 1 or Type 2 for that seat before assuming it can be made unilaterally.
+
 ## 3. Require a Recommendation, Not Just Options
 
 Per `CLAUDE.md` and [`workflows/decision-making.md`](../workflows/decision-making.md): present a recommended option with reasoning, not a neutral list. A Recommender who won't commit to a recommendation hasn't finished the analysis.

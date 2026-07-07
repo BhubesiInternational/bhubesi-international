@@ -20,6 +20,6 @@ Creative support is engaged across active projects (see [`../../projects/`](../.
 - Requests for brand or creative work should reference [`../../knowledge-base/brand-guidelines.md`](../../knowledge-base/brand-guidelines.md).
 - New brand or major creative direction decisions are logged via [`../../templates/decision-log-template.md`](../../templates/decision-log-template.md).
 
-## Related AI Roles
+## Related AI Workforce Seats
 
-**Creative Director**, **Marketing Strategist**, **Social Media Manager** (see [`../../ai-agents/`](../../ai-agents)).
+**[Chief Creative Officer](../../ai-agents/workforce/chief-creative-officer.md)** (brand and creative direction) and **[Chief Marketing Officer](../../ai-agents/workforce/chief-marketing-officer.md)** (go-to-market), drawing on the **Creative Director**, **Marketing Strategist**, and **Social Media Manager** roles (see [`../../ai-agents/`](../../ai-agents)).

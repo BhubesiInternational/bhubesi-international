@@ -26,6 +26,6 @@ Per current company direction, this repository defines organizational structure 
 - Technical proposals should use [`../../templates/project-brief-template.md`](../../templates/project-brief-template.md) with an explicit architecture section.
 - Architecture decisions are logged via [`../../templates/decision-log-template.md`](../../templates/decision-log-template.md).
 
-## Related AI Roles
+## Related AI Workforce Seat
 
-**Software Architect**, **AI Engineer**, **Research Analyst** (see [`../../ai-agents/`](../../ai-agents)).
+**[CTO](../../ai-agents/workforce/cto.md)**, drawing on the **Software Architect**, **AI Engineer**, and **Research Analyst** roles (see [`../../ai-agents/`](../../ai-agents)).

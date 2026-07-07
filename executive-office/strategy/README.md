@@ -28,6 +28,6 @@ This function is the steward of the company's core doctrine in [`../../executive
 
 This directory currently holds this README as the standing charter for the Strategy function. Add strategic plans, market analyses, and reviews here as they are produced (e.g., `2026-strategic-plan.md`, `market-analysis-<topic>.md`).
 
-## Related AI Role
+## Related AI Workforce Seat
 
-**Business Strategist** and **CEO Advisor** (see [`../../ai-agents/`](../../ai-agents)).
+**[CEO](../../ai-agents/workforce/ceo.md)**, drawing on the **Business Strategist** and **CEO Advisor** roles (see [`../../ai-agents/`](../../ai-agents)).

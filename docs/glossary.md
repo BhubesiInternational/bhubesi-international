@@ -13,7 +13,10 @@ Shared terminology used across Bhubesi International's documentation and operati
 | **Objective / Key Result (OKR)** | The quarterly planning unit defined in `executive-brain/quarterly-planning-framework.md` — a qualitative Objective paired with measurable Key Results, traced back to the current Horizon. |
 | **Business Unit** | A standing operating division of the company (Bhubesi Media, Bhubesi Creative, Bhubesi Labs, Bhubesi Ventures) responsible for ongoing execution in its domain. |
 | **Project** | A time-bound or product-specific initiative (e.g., RecoverHUB, 360Sports) that may draw resources from one or more business units and has a defined brief, scope, and lifecycle. |
-| **AI Agent / Executive Role** | A defined mode of operation for an AI session (e.g., CEO Advisor, Software Architect) selected based on the task at hand, as defined in `ai-agents/`. |
+| **AI Agent / Role** | A lightweight, task-mode persona (e.g., Business Strategist, Software Architect) any AI session can adopt for a specific, self-contained piece of work, as defined in `ai-agents/roles/`. |
+| **AI Workforce** | The 12 permanent, named AI executive seats (CEO, COO, CFO, CTO, Chief Legal Officer, Chief Creative Officer, Chief Marketing Officer, Chief Research Officer, Film Producer, Grant Writer, Sales Director, HR Director) defined in `ai-agents/workforce/`, each with its own Responsibilities, Inputs, Outputs, Decision Authority, Standard Workflows, and KPIs. |
+| **Seat** | An individual position in the AI Workforce org chart (e.g., "the CFO seat"), distinct from the underlying AI session that may occupy it for a given task. |
+| **Dotted Line** | A workforce reporting relationship requiring consultation before deciding in that domain, without changing who the seat formally reports to (e.g., Film Producer's dotted line to the Chief Legal Officer for rights). |
 | **Workflow** | A documented, repeatable process for carrying out a category of work (e.g., the standard task workflow, project kickoff, decision-making process). |
 | **Template** | A reusable document structure (brief, proposal, decision log, meeting notes, financial report) used to keep output consistent across the company. |
 | **Knowledge Base** | The shared reference material — company overview, brand guidelines, FAQ — that applies across all units and projects. |

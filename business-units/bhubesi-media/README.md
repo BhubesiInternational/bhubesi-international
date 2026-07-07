@@ -22,6 +22,6 @@ Additional media initiatives will be listed here as they are approved.
 - New media/documentary proposals should use [`../../templates/project-brief-template.md`](../../templates/project-brief-template.md) and route through Strategy for approval before production begins.
 - Budget requests follow the process in [`../../executive-office/finance/README.md`](../../executive-office/finance/README.md).
 
-## Related AI Roles
+## Related AI Workforce Seat
 
-**Documentary Producer**, **Film Director**, **Creative Director** (see [`../../ai-agents/`](../../ai-agents)).
+**[Film Producer](../../ai-agents/workforce/film-producer.md)** (reports to Chief Creative Officer), drawing on the **Documentary Producer** and **Film Director** roles (see [`../../ai-agents/`](../../ai-agents)).

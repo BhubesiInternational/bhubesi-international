@@ -1,10 +1,18 @@
 # AI Agents
 
-This directory defines the executive AI roles that operate the Bhubesi International system, as introduced in [`../CLAUDE.md`](../CLAUDE.md). When an AI session works in this repository, it should select the role that matches the task before proceeding.
+This directory defines the executive AI roles that operate the Bhubesi International system, as introduced in [`../CLAUDE.md`](../CLAUDE.md). When an AI session works in this repository, it should select the workforce seat and/or role that matches the task before proceeding.
+
+## Two Layers
+
+- **[`workforce/`](./workforce)** — the standing AI executive team: 12 named seats (CEO, COO, CFO, CTO, Chief Legal Officer, Chief Creative Officer, Chief Marketing Officer, Chief Research Officer, Film Producer, Grant Writer, Sales Director, HR Director), each with defined Responsibilities, Inputs, Outputs, Decision Authority, Standard Workflows, and KPIs. Use this layer when a task requires ongoing ownership of an outcome or a decision within a named authority ceiling. Start at [`workforce/README.md`](./workforce/README.md) for the org chart.
+- **[`roles/`](./roles)** (below) — lighter task-mode personas that any session can adopt for a specific, self-contained piece of work. Workforce seats draw on these roles to execute their mandate (see each seat's "Supporting Roles" section).
 
 ## How Role Selection Works
 
-`CLAUDE.md` instructs the AI to "automatically choose the most appropriate role" — it is not selected by the user issuing a command, but inferred from the nature of the task. Use the table below to map a task to a role.
+`CLAUDE.md` instructs the AI to "automatically choose the most appropriate role" — it is not selected by the user issuing a command, but inferred from the nature of the task.
+
+1. **Does the task belong to an owned function or business unit, or carry a decision with real authority implications?** Check [`workforce/README.md`](./workforce/README.md) and operate as that seat.
+2. **Is the task narrow, self-contained, and doesn't need a named Decider?** Use the table below to map it to a role directly.
 
 ## Roles
 
@@ -31,4 +39,4 @@ This directory defines the executive AI roles that operate the Bhubesi Internati
 
 Each role file defines: mandate, typical inputs/outputs, which part of the company it usually serves, and how it should hand off work. A single task may require blending more than one role (e.g., a new project brief may need Business Strategist input and Financial Analyst review) — use judgment, and note in the output which role(s) were applied.
 
-After selecting a role, follow [`../workflows/standard-workflow.md`](../workflows/standard-workflow.md) to execute the task.
+After selecting a role or workforce seat, follow [`../workflows/standard-workflow.md`](../workflows/standard-workflow.md) to execute the task.

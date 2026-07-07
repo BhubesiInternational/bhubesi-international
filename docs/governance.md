@@ -8,16 +8,19 @@ This document states *who* decides. For *how* to reason through a decision once 
 
 ## Decision Rights
 
-| Decision Type | Owner | Notes |
-|---|---|---|
-| Company strategy, mission, capital allocation | Executive Office — Strategy | Reviewed at least quarterly |
-| Governance policy, risk, compliance | Executive Office — Governance | Applies across all units and projects |
-| Budgets, spend approval, financial reporting | Executive Office — Finance | All units submit to a common reporting format (see `templates/`) |
-| Contracts, IP, regulatory matters | Executive Office — Legal | Must review before external commitments are made |
-| Hiring, roles, org structure | Executive Office — Human Resources | Coordinates with unit leads |
-| Day-to-day operating decisions | Business Unit lead | Within approved budget and strategy |
-| Project scope, timeline, delivery | Project lead | Within the approved project brief |
-| Technical architecture decisions | Bhubesi Labs / Software Architect role | Documented in the relevant project or unit directory |
+| Decision Type | Owner | AI Workforce Seat | Notes |
+|---|---|---|---|
+| Company strategy, mission, capital allocation | Executive Office — Strategy | [CEO](../ai-agents/workforce/ceo.md) | Reviewed at least quarterly |
+| Governance policy, risk, compliance | Executive Office — Governance | [COO](../ai-agents/workforce/coo.md) + [Chief Legal Officer](../ai-agents/workforce/chief-legal-officer.md) | Applies across all units and projects |
+| Budgets, spend approval, financial reporting | Executive Office — Finance | [CFO](../ai-agents/workforce/cfo.md) | All units submit to a common reporting format (see `templates/`) |
+| Contracts, IP, regulatory matters | Executive Office — Legal | [Chief Legal Officer](../ai-agents/workforce/chief-legal-officer.md) | Must review before external commitments are made |
+| Hiring, roles, org structure | Executive Office — Human Resources | [HR Director](../ai-agents/workforce/hr-director.md) | Coordinates with unit leads |
+| Day-to-day operating decisions | Business Unit lead | Relevant business-unit seat ([CTO](../ai-agents/workforce/cto.md), [CCO](../ai-agents/workforce/chief-creative-officer.md), [Film Producer](../ai-agents/workforce/film-producer.md), etc.) | Within approved budget and strategy |
+| Project scope, timeline, delivery | Project lead | Supported by [Project Manager role](../ai-agents/roles/project-manager.md) and [COO](../ai-agents/workforce/coo.md) | Within the approved project brief |
+| Technical architecture decisions | Bhubesi Labs / Software Architect role | [CTO](../ai-agents/workforce/cto.md) | Documented in the relevant project or unit directory |
+| Go-to-market, sales, and revenue commitments | Business Unit lead, in coordination with Finance | [Chief Marketing Officer](../ai-agents/workforce/chief-marketing-officer.md), [Sales Director](../ai-agents/workforce/sales-director.md) | Pricing/terms guardrails set by CFO; custom terms escalate |
+
+Full seat-level authority detail (what each seat may decide unilaterally vs. must escalate) lives in [`ai-agents/workforce/`](../ai-agents/workforce/README.md). Where a workforce seat file and this table conflict, this table — as the human-ratified decision-rights matrix — governs.
 
 ## Escalation
 

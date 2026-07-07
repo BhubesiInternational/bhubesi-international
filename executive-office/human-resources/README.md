@@ -26,6 +26,6 @@ Own organizational structure, hiring, culture, and performance across Bhubesi In
 
 This directory currently holds this README as the standing charter for the Human Resources function. Add org charts, role descriptions, and HR policy here as they are produced (e.g., `org-structure.md`, `hiring-process.md`).
 
-## Related AI Role
+## Related AI Workforce Seat
 
-**Chief of Staff** and **Operations Manager** (see [`../../ai-agents/`](../../ai-agents)).
+**[HR Director](../../ai-agents/workforce/hr-director.md)**, drawing on the **Chief of Staff** and **Operations Manager** roles (see [`../../ai-agents/`](../../ai-agents)).
