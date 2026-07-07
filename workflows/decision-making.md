@@ -2,6 +2,8 @@
 
 This workflow expands on steps 3–4 of the [standard workflow](./standard-workflow.md) — identifying risk and recommending a solution — for decisions significant enough to need explicit tracking.
 
+This is the day-to-day procedure. For the underlying reasoning model (decision classification, RACI-style roles, evidence standards), see [`../executive-brain/decision-framework.md`](../executive-brain/decision-framework.md).
+
 ## When to Use This
 
 Use this workflow (rather than deciding informally) when a decision:
@@ -15,7 +17,7 @@ See [`../docs/governance.md`](../docs/governance.md) for the full decision-right
 
 ## Steps
 
-1. **Frame the decision.** State the question being decided, not just the topic. ("Should we allocate budget X to project Y in Q3?" not "project Y budget.")
+1. **Frame the decision.** State the question being decided, not just the topic. ("Should we allocate budget X to project Y in Q3?" not "project Y budget.") Classify it as Type 1 or Type 2 per [`../executive-brain/decision-framework.md`](../executive-brain/decision-framework.md).
 2. **Identify the owner.** Use the decision-rights table in [`../docs/governance.md`](../docs/governance.md) to determine who has authority to decide.
 3. **Gather input.** Pull relevant analysis from the applicable roles (Financial Analyst for cost, Legal Research Assistant for risk, Business Strategist for market fit, etc. — see [`../ai-agents/README.md`](../ai-agents/README.md)).
 4. **Present options with a recommendation.** Avoid presenting a menu without a point of view — recommend one option and state the trade-off against the alternative(s).

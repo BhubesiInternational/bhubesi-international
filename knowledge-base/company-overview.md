@@ -4,13 +4,16 @@
 
 Bhubesi International is building a world-class African company operating across business, media, technology, education, consulting, research, and innovation, to global standards.
 
+This page is a summary. The canonical, authoritative statement of the company's vision, mission, and values lives in [`../executive-brain/vision-mission-values.md`](../executive-brain/vision-mission-values.md); the company's Constitution and 10-year strategy live in [`../executive-brain/`](../executive-brain).
+
 ## Mission
 
 To build systems, ventures, and stories that demonstrate African excellence on a global stage — combining rigorous business practice with creative and technical ambition.
 
 ## Structure at a Glance
 
-**Executive Office** (direction): Strategy, Governance, Finance, Legal, Human Resources
+**Executive Brain** (doctrine): Constitution, Vision/Mission/Values, 10-Year Strategy, Decision Framework, Risk Register, KPI Framework
+→ **Executive Office** (direction): Strategy, Governance, Finance, Legal, Human Resources
 → **Business Units** (execution): Bhubesi Media, Bhubesi Creative, Bhubesi Labs, Bhubesi Ventures
 → **Projects** (initiatives): RecoverHUB, 360Sports, The Chairman, Innocentia, Future Ventures
 

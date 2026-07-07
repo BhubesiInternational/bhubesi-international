@@ -3,6 +3,7 @@
 **Date:** [YYYY-MM-DD]
 **Decision Owner:** [Person / function with authority, per `docs/governance.md`]
 **Business Unit / Project:** [e.g., Bhubesi Ventures / Future Ventures]
+**Decision Type:** [Type 1 (careful) / Type 2 (fast) — see `executive-brain/decision-framework.md`]
 
 ## Decision
 

@@ -4,6 +4,8 @@
 
 This document defines who decides what at Bhubesi International, and how the Executive Office oversees business units and projects. It applies equally to human decision-makers and to AI agents acting on the company's behalf.
 
+This document states *who* decides. For *how* to reason through a decision once you know who owns it, see [`executive-brain/decision-framework.md`](../executive-brain/decision-framework.md). Both operate under the authority granted in [`executive-brain/constitution.md`](../executive-brain/constitution.md).
+
 ## Decision Rights
 
 | Decision Type | Owner | Notes |
@@ -26,7 +28,7 @@ Escalate to the Executive Office when a decision:
 3. Changes strategic direction, brand, or company structure.
 4. Cannot be resolved between business units.
 
-Escalations should be documented (see [`templates/decision-log-template.md`](../templates/decision-log-template.md)) so the reasoning and outcome are preserved.
+Escalations should be documented (see [`templates/decision-log-template.md`](../templates/decision-log-template.md)) so the reasoning and outcome are preserved. Risks that drive an escalation should be tracked in [`executive-brain/risk-register.md`](../executive-brain/risk-register.md).
 
 ## Governance for AI-Assisted Work
 
@@ -44,4 +46,4 @@ When an AI agent (a Claude session operating under `CLAUDE.md`) performs work in
 - **Governance & Legal**: reviewed as needed, minimum semi-annually.
 - **Business units and projects**: status reviewed at milestones defined in each project's brief.
 
-This cadence is a starting default. Update it here once the company formalizes its actual board/leadership meeting schedule.
+This cadence is a starting default. Update it here once the company formalizes its actual board/leadership meeting schedule. The quarterly cadence is executed in detail via [`executive-brain/quarterly-planning-framework.md`](../executive-brain/quarterly-planning-framework.md).

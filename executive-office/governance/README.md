@@ -2,7 +2,7 @@
 
 ## Mandate
 
-Own decision rights, risk management, compliance, and policy across Bhubesi International. The company-wide governance model is documented in [`../../docs/governance.md`](../../docs/governance.md); this directory holds the operating detail behind it.
+Own decision rights, risk management, compliance, and policy across Bhubesi International. The company-wide governance model is documented in [`../../docs/governance.md`](../../docs/governance.md); this directory holds the operating detail behind it. The *how* of decision-making is defined in [`../../executive-brain/decision-framework.md`](../../executive-brain/decision-framework.md), which this function enforces.
 
 ## Responsibilities
 
@@ -19,7 +19,7 @@ Own decision rights, risk management, compliance, and policy across Bhubesi Inte
 ## Outputs
 
 - Policy documents (add here as `policy-<topic>.md`).
-- Risk register (add as `risk-register.md` once the company begins tracking formally).
+- Risk register: owned and maintained at [`../../executive-brain/risk-register.md`](../../executive-brain/risk-register.md).
 - Escalation decisions, logged via [`../../templates/decision-log-template.md`](../../templates/decision-log-template.md).
 
 ## Contents

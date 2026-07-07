@@ -13,6 +13,7 @@ Everything here follows the principles in [`CLAUDE.md`](./CLAUDE.md): build syst
 | Directory | Purpose |
 |---|---|
 | [`docs/`](./docs) | Architecture, governance model, onboarding, and reference documentation for the operating system itself |
+| [`executive-brain/`](./executive-brain) | The company's doctrine layer — Constitution, vision/mission/values, 10-year strategy, decision framework, quarterly planning, risk register, KPI framework, and executive dashboard spec |
 | [`executive-office/`](./executive-office) | Strategy, governance, finance, legal, and human resources — the functions that steer the company |
 | [`business-units/`](./business-units) | Bhubesi Media, Bhubesi Creative, Bhubesi Labs, and Bhubesi Ventures — the operating divisions |
 | [`projects/`](./projects) | Active initiatives: RecoverHUB, 360Sports, The Chairman, Innocentia, and Future Ventures |
@@ -23,7 +24,7 @@ Everything here follows the principles in [`CLAUDE.md`](./CLAUDE.md): build syst
 
 ## How to Use This Repository
 
-- **Executives and staff**: Start with [`docs/getting-started.md`](./docs/getting-started.md), then read the README in the business unit or project you're working in.
+- **Executives and staff**: Start with [`docs/getting-started.md`](./docs/getting-started.md), then read [`executive-brain/README.md`](./executive-brain/README.md) for the company's guiding doctrine before diving into the business unit or project you're working in.
 - **AI agents / Claude sessions**: `CLAUDE.md` defines your operating mandate and executive roles. Use [`ai-agents/README.md`](./ai-agents/README.md) to select the correct role for a given task, and [`workflows/standard-workflow.md`](./workflows/standard-workflow.md) for how to execute it.
 - **New initiatives**: Use the templates in [`templates/`](./templates) to launch a project brief, and add the initiative under [`projects/`](./projects) once approved.
 

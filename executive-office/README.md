@@ -2,6 +2,8 @@
 
 The Executive Office sets direction, governs risk, allocates capital, and ensures Bhubesi International operates to a professional, defensible standard across every business unit and project.
 
+The Executive Office is the function that *operationalizes* the company's doctrine — see [`../executive-brain/`](../executive-brain), particularly the [Constitution](../executive-brain/constitution.md), which grants this function its authority, and the [Decision Framework](../executive-brain/decision-framework.md), which this function applies.
+
 ## Functions
 
 | Function | Responsibility |

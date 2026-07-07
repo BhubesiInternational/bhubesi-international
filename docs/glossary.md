@@ -4,7 +4,13 @@ Shared terminology used across Bhubesi International's documentation and operati
 
 | Term | Definition |
 |---|---|
-| **Executive Office** | The central governing function covering Strategy, Governance, Finance, Legal, and Human Resources. Sets direction and approves significant decisions. |
+| **Executive Brain** | The company's doctrine layer (`executive-brain/`): Constitution, Vision/Mission/Values, 10-Year Strategy, Decision Framework, Quarterly Planning Framework, Risk Register, KPI Framework, and Executive Dashboard spec. Governs when in conflict with any other document. |
+| **Constitution** | The highest-authority document (`executive-brain/constitution.md`) defining the company's structure, decision rights, and amendment process. |
+| **Executive Office** | The central governing function covering Strategy, Governance, Finance, Legal, and Human Resources. Sets direction and approves significant decisions, operationalizing the Executive Brain. |
+| **Horizon** | One of three multi-year strategic phases (Foundation, Scale, Leadership) defined in `executive-brain/strategy-10-year.md`, each with a defined exit condition. |
+| **Type 1 / Type 2 Decision** | Classification from `executive-brain/decision-framework.md`: Type 1 is hard/costly to reverse and needs full process; Type 2 is easily reversible and should be decided quickly. |
+| **North Star Metric** | A company-level metric in `executive-brain/kpi-framework.md` that leadership would change a decision based on if it moved. |
+| **Objective / Key Result (OKR)** | The quarterly planning unit defined in `executive-brain/quarterly-planning-framework.md` — a qualitative Objective paired with measurable Key Results, traced back to the current Horizon. |
 | **Business Unit** | A standing operating division of the company (Bhubesi Media, Bhubesi Creative, Bhubesi Labs, Bhubesi Ventures) responsible for ongoing execution in its domain. |
 | **Project** | A time-bound or product-specific initiative (e.g., RecoverHUB, 360Sports) that may draw resources from one or more business units and has a defined brief, scope, and lifecycle. |
 | **AI Agent / Executive Role** | A defined mode of operation for an AI session (e.g., CEO Advisor, Software Architect) selected based on the task at hand, as defined in `ai-agents/`. |

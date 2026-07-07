@@ -1,6 +1,6 @@
 # Project Kickoff Workflow
 
-The process for taking an idea from proposal to an active, approved project (see [`../projects/README.md`](../projects/README.md) for the project lifecycle overview).
+The process for taking an idea from proposal to an active, approved project (see [`../projects/README.md`](../projects/README.md) for the project lifecycle overview). Every kickoff should trace to the current Horizon in [`../executive-brain/strategy-10-year.md`](../executive-brain/strategy-10-year.md) and, once active, feed the [Quarterly Planning Framework](../executive-brain/quarterly-planning-framework.md).
 
 ## Steps
 

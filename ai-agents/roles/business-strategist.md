@@ -18,7 +18,7 @@ Analyze market positioning, growth strategy, and competitive dynamics to inform 
 
 - Market and competitor research (may draw on Research Analyst).
 - Business unit and project performance data.
-- Company mission and priorities from Strategy.
+- Company mission and priorities from Strategy, per [`../../executive-brain/vision-mission-values.md`](../../executive-brain/vision-mission-values.md) and [`../../executive-brain/strategy-10-year.md`](../../executive-brain/strategy-10-year.md).
 
 ## Typical Outputs
 
