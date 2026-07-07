@@ -1,0 +1,84 @@
+// Bhubesi OS — MVP data model.
+// A deliberately minimal slice of platform/database/data-model.md: enough to make
+// authentication, multi-tenancy, and chat persistence real, without building every
+// entity in the full architecture up front. See platform/database/entity-relationship-diagram.md
+// for the target end-state this grows into.
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Company {
+  id        String     @id @default(uuid())
+  name      String
+  createdAt DateTime   @default(now())
+  members   Membership[]
+  conversations Conversation[]
+
+  @@map("companies")
+}
+
+model User {
+  id           String     @id @default(uuid())
+  email        String     @unique
+  name         String?
+  passwordHash String
+  createdAt    DateTime   @default(now())
+  memberships  Membership[]
+  conversations Conversation[]
+
+  @@map("users")
+}
+
+// A user's role within one company (tenant). Mirrors platform/api/authorization.md's
+// RBAC roles — kept as a free-form string for the MVP rather than a fixed enum, so new
+// AI Workforce seats can be added as roles without a schema migration.
+model Membership {
+  id        String   @id @default(uuid())
+  userId    String
+  companyId String
+  role      String
+  createdAt DateTime @default(now())
+
+  user    User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  company Company @relation(fields: [companyId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, companyId])
+  @@map("memberships")
+}
+
+// One conversation per (user, company, seat) — matches the chat prototype's model of
+// "a persistent thread per AI Workforce seat," now backed by real storage instead of
+// in-memory React state.
+model Conversation {
+  id        String   @id @default(uuid())
+  userId    String
+  companyId String
+  seatId    String   // matches the static seat ids in src/lib/seats.ts, e.g. "cfo"
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user     User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  company  Company   @relation(fields: [companyId], references: [id], onDelete: Cascade)
+  messages Message[]
+
+  @@unique([userId, companyId, seatId])
+  @@map("conversations")
+}
+
+model Message {
+  id             String   @id @default(uuid())
+  conversationId String
+  role           String   // "user" | "seat"
+  content        String
+  createdAt      DateTime @default(now())
+
+  conversation Conversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+
+  @@map("messages")
+}

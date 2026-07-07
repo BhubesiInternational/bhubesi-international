@@ -2,7 +2,7 @@
 
 ## Status
 
-**Active.** Directed directly by company leadership (standing in for the Strategy approval gate in [`workflows/project-kickoff.md`](../../workflows/project-kickoff.md)). First module — AI Chat Interface — is a working clickable prototype. Remaining eight modules are not started.
+**Active.** Directed directly by company leadership (standing in for the Strategy approval gate in [`workflows/project-kickoff.md`](../../workflows/project-kickoff.md)). First module — AI Chat Interface — has a real backend: real accounts, real Postgres persistence, real Claude-powered replies when an API key is configured. Remaining eight modules are not started.
 
 ## Mandate
 
@@ -16,7 +16,7 @@ Bhubesi OS is the software product that turns this repository's documentation-on
 
 | Module | Status | Owns / Draws On |
 |---|---|---|
-| AI Chat Interface | **Prototype built** (`app/`) | [`ai-agents/workforce/`](../../ai-agents/workforce/README.md) — chat with any of the 12 AI Workforce seats |
+| AI Chat Interface | **Real backend built** (`app/`) | [`ai-agents/workforce/`](../../ai-agents/workforce/README.md) — chat with any of the 12 AI Workforce seats |
 | CRM | Not started | Sales Director, Chief Marketing Officer |
 | Project Management | Not started | COO, Project Manager role, [`projects/`](../../projects), [`executive-brain/quarterly-planning-framework.md`](../../executive-brain/quarterly-planning-framework.md) |
 | Document Management | Not started | COO, Chief Legal Officer |
@@ -30,39 +30,35 @@ Module build order is a Type 2 decision for the CTO seat (see [`executive-brain/
 
 ## AI Chat Interface (`app/`)
 
-A Next.js + React + TypeScript + Tailwind CSS web app. Prototype fidelity: seat replies are **simulated client-side** (see `app/src/lib/responder.ts`) against each seat's documented Responsibilities, Decision Authority, and KPIs — there is no live LLM backend wired in yet, and no data persists between page loads.
+A Next.js + React + TypeScript + Tailwind CSS web app, now with a real backend: Postgres via Prisma, Auth.js authentication, and an LLM Gateway. See [`app/README.md`](./app/README.md) for the technical detail and local setup.
 
-What it demonstrates:
+What's real:
 
-- All 12 AI Workforce seats, grouped and browsable (Executive Office vs. Operating Seats), matching [`ai-agents/workforce/README.md`](../../ai-agents/workforce/README.md).
-- Per-seat chat with a greeting, suggested prompts, and simulated replies that reflect the seat's actual Responsibilities.
+- **Accounts and multi-tenancy** — signup creates a real user, a real company (tenant), and a membership; every chat request is authorized against that membership server-side.
+- **Persistence** — conversations and messages are rows in Postgres, not React state. They survive a page refresh or a server restart.
+- **AI Workforce replies** — calls Claude with a system prompt built from each seat's actual Responsibilities/Decision Authority/KPIs (see [`ai-agents/workforce/`](../../ai-agents/workforce/README.md)) when `ANTHROPIC_API_KEY` is set. Falls back to the original deterministic simulated responder when it isn't, so the app is fully usable either way.
+- All 12 AI Workforce seats, grouped and browsable (Executive Office vs. Operating Seats).
 - A live "Decision authority" panel per seat, showing Type 2 (decide directly) vs. Type 1 (must escalate) per [`executive-brain/decision-framework.md`](../../executive-brain/decision-framework.md).
-- Simple heuristics for cross-domain consults (e.g., asking the CFO about a contract nudges toward looping in the Chief Legal Officer) and Type 1 detection (e.g., "sign", "hire", "restructure" trigger an escalation flag) — illustrating the dotted-line and authority-ceiling rules from the workforce specs, not a real policy engine.
 - A module nav bar showing all 9 planned Bhubesi OS modules, with only AI Chat enabled and the rest marked "Soon."
+
+Verified end-to-end: signup → auto-login → chat → page reload → data still there → sign out → route re-protected. Real rows checked directly in Postgres, not just claimed.
 
 ### Running it locally
 
-```bash
-cd projects/bhubesi-os/app
-npm install
-npm run dev
-```
+See [`app/README.md`](./app/README.md) for full setup (requires a local Postgres instance).
 
-Then open `http://localhost:3000`.
+### What's Still Prototype-Grade
 
-### Next Steps Toward a Real Backend
+This is a first real slice of [`platform/roadmap/mvp.md`](../../platform/roadmap/mvp.md), built directly in this app rather than the full architecture in [`platform/`](../../platform/README.md):
 
-The full system architecture for this transition is now designed — see [`platform/`](../../platform/README.md), specifically [`platform/roadmap/mvp.md`](../../platform/roadmap/mvp.md) for the concrete MVP scope:
-
-1. Replace `app/src/lib/responder.ts`'s simulated logic with real LLM calls through the LLM Gateway per [`platform/ai/ai-platform.md`](../../platform/ai/ai-platform.md) and [`platform/ai/executive-ai.md`](../../platform/ai/executive-ai.md).
-2. Add persistence and multi-tenancy per [`platform/database/data-model.md`](../../platform/database/data-model.md) — currently in-memory only, lost on refresh.
-3. Add authentication and authorization per [`platform/api/authentication.md`](../../platform/api/authentication.md) and [`platform/api/authorization.md`](../../platform/api/authorization.md).
-4. Migrate this app into the monorepo structure in [`platform/architecture/solution-architecture.md`](../../platform/architecture/solution-architecture.md).
-5. Scope each subsequent module as its own addition to this brief, following [`workflows/project-kickoff.md`](../../workflows/project-kickoff.md) and [`platform/roadmap/`](../../platform/roadmap).
+1. Not yet migrated into the Turborepo/NestJS monorepo structure in [`platform/architecture/solution-architecture.md`](../../platform/architecture/solution-architecture.md) — this is a single Next.js app with API routes, not the target modular backend.
+2. Row-Level Security (per [`platform/database/data-model.md`](../../platform/database/data-model.md)) is not yet implemented — tenant isolation is currently enforced only at the application layer (checked in every API route), not also at the database layer. Acceptable for MVP scale, a gap to close before [`platform/roadmap/version-1.md`](../../platform/roadmap/version-1.md).
+3. No memory/knowledge engine (per [`platform/ai/memory-system.md`](../../platform/ai/memory-system.md)) — each Claude call only sees the current conversation, not the rest of this repository.
+4. Every other module in the table above.
 
 ## Related Documents
 
-- [`platform/`](../../platform/README.md) — the complete recommended system architecture this prototype grows into, including the [CTO Report](../../platform/CTO-REPORT.md).
+- [`platform/`](../../platform/README.md) — the complete recommended system architecture this app is incrementally growing into, including the [CTO Report](../../platform/CTO-REPORT.md).
 - [`ai-agents/workforce/`](../../ai-agents/workforce/README.md) — the org chart this interface makes usable.
-- [`executive-brain/decision-framework.md`](../../executive-brain/decision-framework.md) — the Type 1/Type 2 logic the prototype simulates.
+- [`executive-brain/decision-framework.md`](../../executive-brain/decision-framework.md) — the Type 1/Type 2 logic each seat's system prompt encodes.
 - [`executive-brain/executive-dashboard-spec.md`](../../executive-brain/executive-dashboard-spec.md) — a sibling specification for a future Bhubesi OS module (Executive Dashboard), written before this one was built.
